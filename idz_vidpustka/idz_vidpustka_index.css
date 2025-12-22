@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #fb8585ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff0f0;
+    border: 2px solid #b30000;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #b30000;
+    border-radius: 6px;
+}
+
+#FeastDayLabel {
+    display: inline;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addFeastDay {
+    width: 10%;
+    
+}
+
+#calculateBtn {
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffe5e5;
+    border: 1px solid #b30000;
+    border-radius: 6px;
+    text-align: center;
+    min-height: 30px;
+}
+
+.eventWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eventWrapper input[type="text"],
+.eventWrapper input[type="date"] {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #b30000;
+    border-radius: 6px;
+}
+
+.eventWrapper button {
+    padding: 6px 10px;
+    font-size: 15px;
+}
