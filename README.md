@@ -1,2 +1,2 @@
 # ValeriiVysotskyi.github.io
-WebDevelopeCourse
+WebDevelopCourse
