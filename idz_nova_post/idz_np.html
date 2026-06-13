@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Valerii Vysotskyi idz NP</title>
+  <link rel="stylesheet" href="izd_np.css">
+  <script src="idz_np.js" defer></script>
+</head>
+<body>
+
+  <div id="main">
+    <div id="settlement-search">
+      <h2>Пошук населеного пункту</h2>
+      <input id="settlement-input" placeholder="Введіть назву">
+      <button onclick="searchSettlementHandler()">Знайти</button>
+    </div>
+
+    <div id="street-search">
+      <h2>Пошук вулиці</h2>
+      <h3>Обраний населений пункт:<span id="settlement-name"></span></h3>
+      <input id="street-input" placeholder="Введіть назву">
+      <button onclick="searchStreetHandler()">Знайти</button>
+    </div>
+    
+    <div id="search-zone">
+      <br>
+      <hr>
+      <h2>Результати пошуку:</h2>
+      <div id="pagination">
+        <button id="prev-btn", onclick="lastSearchMode(currentPage - 1)">Назад</button>
+        <span id="page-number"></span>
+        <button id="next-btn", onclick="lastSearchMode(currentPage + 1)">Вперед</button>
+      </div>
+      <br>
+      <div id="result-container"></div>
+    </div>
+  </div>
+
+  <div id="warehouses-window">
+    <h2>Інформація про відділення "Нової Пошти"</h2>
+    <div class="filter-block">
+      <label for="warehouse-type">Оберіть тип відділення:</label>
+      <br>
+      <br>
+      <select id="warehouse-type" onchange="changeWarehouseRef()"></select>
+    </div>
+
+    <div id="warehouse-search">
+      <br>
+      <hr>
+      <h2>Результати пошуку:</h2>
+      <div id="warehouse-pagination">
+        <button id="warehouse-prev-btn" onclick="searchWarehouseHandler(currentWarehousePage - 1)">Назад</button>
+        <span id="warehouse-page-number"></span>
+        <button id="warehouse-next-btn" onclick="searchWarehouseHandler(currentWarehousePage + 1)">Вперед</button>
+      </div>
+      <br>
+      <div id="warehouse-result"></div>
+    </div>
+  </div>
+
+</body>
+</html>
